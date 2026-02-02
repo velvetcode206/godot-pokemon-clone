@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Godot Pokemon Clone"
-config/features=PackedStringArray("4.6", "Mobile")
+run/main_scene="uid://dtqgx6oe0s6pa"
+config/features=PackedStringArray("4.6", "C#", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Globals="*uid://d04g26v6wxk4i"
 
 [dotnet]
 
