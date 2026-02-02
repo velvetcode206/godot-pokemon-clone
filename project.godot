@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 Globals="*uid://d04g26v6wxk4i"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [dotnet]
 
 project/assembly_name="Godot Pokemon Clone"

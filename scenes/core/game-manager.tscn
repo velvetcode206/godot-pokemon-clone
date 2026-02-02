@@ -1,3 +1,31 @@
 [gd_scene format=3 uid="uid://dtqgx6oe0s6pa"]
 
+[ext_resource type="Texture2D" uid="uid://b5llakc4112sk" path="res://icon.svg" id="1_1btut"]
+
 [node name="GameManager" type="Node" unique_id=1288267819]
+
+[node name="Control" type="Control" parent="." unique_id=2016141076]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Control" unique_id=883419220]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="Control/SubViewportContainer" unique_id=1622583311]
+size = Vector2i(1280, 720)
+size_2d_override = Vector2i(1280, 720)
+size_2d_override_stretch = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/SubViewportContainer/SubViewport" unique_id=1950437984]
+position = Vector2(100, 100)
+texture = ExtResource("1_1btut")
